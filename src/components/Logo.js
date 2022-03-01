@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 // @mui
 import { useTheme } from '@mui/material/styles';
 import { Box } from '@mui/material';
-import { Iconify, Image } from '../components';
+import {  Image } from '../components';
 
 // ----------------------------------------------------------------------
 

@@ -156,7 +156,7 @@ export default function getColorPresets(themeColorPresets) {
       break;
 
     default:
-      color = getPreset(presetsKey.default);
+      color = getPreset(presetsKey.purpleTeal);
   }
   return color;
 }
