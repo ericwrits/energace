@@ -27,14 +27,13 @@ export default function MarketingLandingHero() {
           <Grid item xs={12} md={6} lg={5} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <Stack spacing={5}>
               <Typography variant="overline" sx={{ color: 'primary.main' }}>
-                Digital Marketing
+                Psycological Firm
               </Typography>
 
-              <Typography variant="h1">Boosts Your Website Traffic</Typography>
+              <Typography variant="h2">Welcome to Energace Therapeutic Learning Consults</Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-                Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-                venenatis ante odio sit amet eros.
+                Our Innovative therapeutic services helps in addressing a wide range of psycological, mental, behavioural and learning disorders
               </Typography>
 
               <Stack
@@ -43,7 +42,7 @@ export default function MarketingLandingHero() {
                 spacing={3}
               >
                 <Button variant="contained" size="large">
-                  Try For Free
+                  Book an Appointment
                 </Button>
 
                 <Button
