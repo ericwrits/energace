@@ -45,21 +45,6 @@ export default function Header({ transparent }) {
         >
           <Box sx={{ lineHeight: 0, position: 'relative' }}>
             <Logo onDark={transparent && !isScrolling} />
-
-            <Label
-              color="info"
-              sx={{
-                ml: 0.5,
-                px: 0.5,
-                top: -14,
-                left: 64,
-                height: 20,
-                fontSize: 11,
-                position: 'absolute',
-              }}
-            >
-              v1.2
-            </Label>
           </Box>
 
           {isDesktop && (
@@ -103,10 +88,14 @@ export default function Header({ transparent }) {
                     Join Us
                   </Button>
                 </NextLink>
-
-                <Button variant="contained" href={Routes.buyNow} target="_blank" rel="noopener">
-                  Buy Now
-                </Button>
+                <NextLink href={Routes.loginIllustration} prefetch={false}>
+                  <Button 
+                    variant="contained" 
+                    sx={{ bgcolor: 'primary.light' }}
+                  >
+                    Login
+                  </Button>
+                </NextLink>
               </Stack>
             )}
           </Stack>

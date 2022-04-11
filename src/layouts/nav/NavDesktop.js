@@ -32,7 +32,7 @@ const RootLinkStyle = styled(Link, {
       margin: 'auto 0',
       borderRadius: '50%',
       position: 'absolute',
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: theme.palette.primary.light,
     },
   };
   return {

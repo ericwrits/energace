@@ -9,7 +9,7 @@ import { SvgIconStyle } from '../../../components';
 const CORE_VALUES = [
   {
     title: 'Customer Satisfaction',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    description: 'Our main aim is to give the best to our clients.',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_agreement.svg',
   },
   {

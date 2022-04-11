@@ -83,23 +83,19 @@ export default function MarketingAbout() {
           <Grid item xs={12} md={6} lg={6} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="h2">Who We Are?</Typography>
             <Typography sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-              Vivamus consectetuer hendrerit lacus. Curabitur a felis in nunc fringilla tristique.
-              Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.
+              Energace Therapeutic Learning Consults is a psychological practice focused on using its therapeutic initiatives
+              to make credible psychological and educational assessments.
+              <br />
+              Our methods are well developed to Enhance learning, improve cognitive skills, literacy skills and improve emotional state.
+              <br />
+              Our innovative counseling methods are state of the art and are in line with global best practices. As part of our goal towards using non-invasive therapeutic methods we employ the use of modern technology to facility the brain's neurological, developmental and mental processes.
+              <br />
+              Our services can also be used to aid optimum workplace performance. All our methodologies has the brain's health as focal point; and preserves a healthy mental health.
               <br />
               <br />
-              Nam pretium turpis et arcu. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-              dignissim dolor, a pretium mi sem ut ipsum. Praesent venenatis metus at tortor
-              pulvinar varius.
+              We have accredited and licensed psychologist
+            
             </Typography>
-
-            <Button
-              variant="outlined"
-              color="inherit"
-              size="large"
-              endIcon={<Iconify icon={directionStraightRight} sx={{ width: 22, height: 22 }} />}
-            >
-              Check Our Work
-            </Button>
           </Grid>
         </Grid>
 
@@ -109,22 +105,7 @@ export default function MarketingAbout() {
           }}
         />
 
-        <Box
-          sx={{
-            textAlign: 'center',
-            display: 'grid',
-            gap: { xs: 5, md: 8 },
-            gridTemplateColumns: {
-              xs: 'repeat(1, 1fr)',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(4, 1fr)',
-            },
-          }}
-        >
-          {SUMMARY.map((value, index) => (
-            <BoxItem key={value.title} value={value} index={index} />
-          ))}
-        </Box>
+        
       </Container>
     </RootStyle>
   );

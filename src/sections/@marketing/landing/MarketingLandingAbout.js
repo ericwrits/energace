@@ -8,6 +8,10 @@ import { fShortenNumber } from '../../../utils/formatNumber';
 // components
 import { Iconify, Image } from '../../../components';
 
+import NextLink from 'next/link';
+// routes
+import Routes from '../../../routes';
+
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
@@ -24,15 +28,7 @@ export default function MarketingLandingAbout() {
   return (
     <RootStyle>
       <Container>
-        <Image
-          alt="langding about"
-          src="https://zone-assets-api.vercel.app/assets/images/marketing/marketing_langding_about.jpg"
-          ratio="16/9"
-          sx={{
-            borderRadius: 1.5,
-            mb: { xs: 5, md: 10 },
-          }}
-        />
+        
 
         <Grid
           container
@@ -40,7 +36,7 @@ export default function MarketingLandingAbout() {
           columnSpacing={{ md: 3 }}
           justifyContent="space-between"
         >
-          <Grid item xs={12} md={5} sx={{ textAlign: { xs: 'center', md: 'right' } }}>
+          <Grid item xs={12} md={12} sx={{ textAlign: { xs: 'center', md: '' } }}>
             <Typography variant="overline" sx={{ color: 'text.disabled' }}>
               About Us
             </Typography>
@@ -50,35 +46,17 @@ export default function MarketingLandingAbout() {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              In hac habitasse platea dictumst. Aliquam lobortis. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. In dui magna, posuere eget, vestibulum et, tempor
-              auctor, justo. Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas.
+              Energace Therapeutic Learning Consults is a psychological practice
+              focused on using its therapeutic initiatives tomake credible
+              psychological and educational assessments. Our methods are well developed to enhance learning,
+              improve cognitive skills, literacy skills and improve emotional state.
             </Typography>
-
-            <Button size="large" endIcon={<Iconify icon={directionStraightRight} />} sx={{ mt: 5 }}>
-              Lean more
-            </Button>
-          </Grid>
-
-          <Grid item xs={12} md={6}>
-            <Stack spacing={5}>
-              <LineItem
-                total="150"
-                label="projects"
-                text="Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus."
-              />
-              <LineItem
-                total={fShortenNumber(32000)}
-                label="Happy clients"
-                text="Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus."
-              />
-              <LineItem
-                total="20"
-                label="years of experience"
-                text="Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus."
-              />
-            </Stack>
+            <NextLink href={Routes.marketing.about} prefetch={false}>
+              <Button size="large" endIcon={<Iconify icon={directionStraightRight} />} sx={{ mt: 5 }}>
+                Lean more
+              </Button>
+            </NextLink>
+            
           </Grid>
         </Grid>
       </Container>

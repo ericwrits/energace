@@ -152,49 +152,12 @@ function ContentItem({ tour }) {
           position: { md: 'absolute' },
         }}
       >
-        <Typography variant="overline" sx={{ color: 'secondary.main', mb: 5 }}>
-          {location}
-        </Typography>
-
-        <Typography variant="h1" sx={{ maxWidth: 480 }}>
+        <Typography variant="h2" sx={{ maxWidth: 480 }}>
           {slug}
         </Typography>
 
-        <Stack
-          alignItems="center"
-          spacing={{ xs: 2.5, md: 5 }}
-          direction={{ xs: 'column', md: 'row' }}
-          sx={{
-            my: 5,
-            '& svg': {
-              mr: 1,
-              width: 24,
-              height: 24,
-              color: 'primary.main',
-            },
-          }}
-        >
-          <TextIconLabel
-            icon={<Iconify icon={timeIcon} />}
-            value={duration}
-            sx={{ typography: 'subtitle2' }}
-          />
-
-          <TextIconLabel
-            icon={<Iconify icon={starIcon} />}
-            value={`${ratings} reviews`}
-            sx={{ typography: 'subtitle2' }}
-          />
-
-          <TextIconLabel
-            icon={<Iconify icon={currencyIcon} />}
-            value={`Starting at ${fCurrency(price)}`}
-            sx={{ typography: 'subtitle2' }}
-          />
-        </Stack>
-
         <Button variant="contained" size="large">
-          Book Now
+          Book an Appointment Now
         </Button>
       </Stack>
 

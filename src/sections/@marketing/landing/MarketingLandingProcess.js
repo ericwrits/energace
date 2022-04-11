@@ -13,19 +13,19 @@ const COLORS = ['primary', 'secondary', 'warning', 'success'];
 
 const SERVICES = [
   {
-    name: 'Planning',
+    name: 'CBT Therapy',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_sketch_design.svg',
   },
   {
-    name: 'Research',
+    name: 'Brainware Entertainment Therapy',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_search.svg',
   },
   {
-    name: 'Optimizing',
+    name: 'Individual Therapy',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_optimization.svg',
   },
   {
-    name: 'Results',
+    name: 'Reading Therapy',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_analysis.svg',
   },
 ];
@@ -60,7 +60,7 @@ export default function MarketingLandingProcess() {
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+           How our Therapy Solution works.
           </Typography>
         </Stack>
 

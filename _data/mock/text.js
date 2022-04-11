@@ -87,7 +87,7 @@ export const jobCategories = [
 
 export const tourName = [
   'Italian Delights - 12 Days',
-  'Best of Sicily - 8 Days (Small Group Tour)',
+  'We are Energace Therapeutic Learning Consults',
   'Gourmet Journey of Emilia Romagna - 7 Days',
   'Adventure in Iceland',
   'Fire and Ice (6 Days)',

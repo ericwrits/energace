@@ -25,6 +25,12 @@ import {
   TravelLandingFavoriteDestinations,
 } from '../../src/sections/@travel';
 
+import {
+  MarketingLandingAbout,
+  MarketingLandingProcess,
+  MarketingLandingServices,
+} from '../../src/sections/@marketing';
+
 // ----------------------------------------------------------------------
 
 TravelLandingPage.propTypes = {
@@ -41,24 +47,18 @@ export default function TravelLandingPage({ posts }) {
   }
 
   return (
-    <Page title="Landing - Travel">
+    <Page title="Energace Therapeutic Learning Consults">
       <Box sx={{ position: 'relative' }}>
         <TravelLandingHero tours={tours.slice(0, 5)} />
 
-        <Container
-          sx={{
-            left: 0,
-            right: 0,
-            bottom: 0,
-            mx: 'auto',
-            position: { md: 'absolute' },
-          }}
-        >
-          <TravelTourBarFilters onDark sx={{ py: { xs: 3, md: 8 } }} />
-        </Container>
+        
       </Box>
 
-      <TravelLandingIntroduce />
+      <MarketingLandingAbout />
+
+      <MarketingLandingServices />
+
+      <MarketingLandingProcess />
 
       <TravelLandingSummary />
 

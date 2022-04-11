@@ -67,8 +67,8 @@ export const colorPresets = [
     name: presetsKey.purpleTeal,
     primary: {
       lighter: '#EACCFF',
-      light: '#B566FF',
-      main: '#6E00FF',
+      light: '#bb367d',
+      main: '#592c5f',
       dark: '#3F00B7',
       darker: '#1F007A',
       contrastText: contrastText.white,

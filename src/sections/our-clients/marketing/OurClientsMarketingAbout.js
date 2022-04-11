@@ -25,16 +25,16 @@ export default function OurClientsMarketingAbout({ brands }) {
     <RootStyle>
       <Container>
         <Stack alignItems="center" spacing={{ xs: 6, md: 8 }}>
-          <Typography variant="h2">Our Clients</Typography>
+          <Typography variant="h2">Our Partners</Typography>
 
-          <Stack direction="row" flexWrap="wrap" justifyContent="center" sx={{ maxWidth: 680 }}>
-            {brands.slice(0, 8).map((brand) => (
+          <Stack direction="row" flexWrap="wrap" justifyContent="center" sx={{ maxWidth: 980 }}>
+            {brands.slice(0, 5).map((brand) => (
               <Image
                 key={brand.id}
                 alt={brand.name}
                 src={brand.image}
                 sx={{
-                  height: 32,
+                  height: 49,
                   mx: { xs: 2, md: 4 },
                   my: { xs: 2.5, md: 4 },
                 }}

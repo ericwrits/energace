@@ -26,11 +26,8 @@ export default function MarketingLandingHero() {
         <Grid container columnSpacing={10} justifyContent="space-between" alignItems="center">
           <Grid item xs={12} md={6} lg={5} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <Stack spacing={5}>
-              <Typography variant="overline" sx={{ color: 'primary.main' }}>
-                Psycological Firm
-              </Typography>
 
-              <Typography variant="h2">Welcome to Energace Therapeutic Learning Consults</Typography>
+              <Typography variant="h2" sx={{ color: 'primary.main' }} >Welcome to Energace Therapeutic Learning Consults</Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
                 Our Innovative therapeutic services helps in addressing a wide range of psycological, mental, behavioural and learning disorders
@@ -41,39 +38,11 @@ export default function MarketingLandingHero() {
                 justifyContent={{ xs: 'center', md: 'unset' }}
                 spacing={3}
               >
-                <Button variant="contained" size="large">
+                <Button variant="contained" size="large" sx={{ bgcolor: 'primary.light' }}>
                   Book an Appointment
                 </Button>
 
-                <Button
-                  disableRipple
-                  color="inherit"
-                  size="large"
-                  startIcon={
-                    <Box
-                      sx={{
-                        width: 48,
-                        height: 48,
-                        display: 'flex',
-                        borderRadius: '50%',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: (theme) => `solid 2px ${alpha(theme.palette.primary.main, 0.24)}`,
-                      }}
-                    >
-                      <Iconify
-                        icon={playIcon}
-                        sx={{ width: 24, height: 24, color: 'primary.main' }}
-                      />
-                    </Box>
-                  }
-                  sx={{
-                    px: 0,
-                    '&:hover': { bgcolor: 'transparent' },
-                  }}
-                >
-                  See Our Work
-                </Button>
+                
               </Stack>
             </Stack>
           </Grid>
@@ -89,7 +58,7 @@ export default function MarketingLandingHero() {
           >
             <Image
               alt="marketing-market"
-              src="https://zone-assets-api.vercel.app/assets/illustrations/illustration_marketing_market.svg"
+              src="https://i.ibb.co/FzN6m4w/ETLC-Logo-Gradient-I.png"
             />
           </Grid>
         </Grid>

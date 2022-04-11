@@ -18,27 +18,27 @@ const COLORS = ['primary', 'secondary', 'success', 'warning'];
 
 const SERVICES = [
   {
-    name: 'SEO',
+    name: 'Psychoeducational Assessment',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_seo.svg',
-    text: 'Nunc nonummy metus. Donec elit libero',
+    text: "This is Energace's comprehensive diagnostic standardized assessment of a child's cognitive and academic abilities",
     path: Routes.marketing.services,
   },
   {
-    name: 'Email Marketing',
+    name: 'Cognitive assessment',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_mail.svg',
-    text: 'Nunc nonummy metus. Donec elit libero',
+    text: 'Our cognitive assessment focuses on measuring and ascertaining general learning abilities',
     path: Routes.marketing.services,
   },
   {
-    name: 'Search Engine Oprimization',
+    name: 'Reading Assessment',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_analysis.svg',
-    text: 'Nunc nonummy metus. Donec elit libero',
+    text: 'This assessment is focused on evaluating a child or a person reading',
     path: Routes.marketing.services,
   },
   {
-    name: 'Social Marketing',
+    name: 'CBT Assessment',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_bullhorn.svg',
-    text: 'Nunc nonummy metus. Donec elit libero',
+    text: 'Cognitive Behavioural Therapy assessment is a form of clinical interview and observation that enables the therapist and client',
     path: Routes.marketing.services,
   },
 ];
@@ -74,7 +74,7 @@ export default function MarketingLandingServices() {
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+            How we get to know what's up 
           </Typography>
         </Stack>
 

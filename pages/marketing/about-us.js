@@ -14,9 +14,7 @@ import { NewsletterMarketing } from '../../src/sections/newsletter';
 import { OurClientsMarketingAbout } from '../../src/sections/our-clients';
 import { TestimonialsMarketing } from '../../src/sections/testimonials';
 import {
-  MarketingFaqs,
   MarketingAbout,
-  MarketingFreeSEO,
   MarketingAboutStory,
   MarketingAboutOurVision,
   MarketingAboutCoreValues,
@@ -35,7 +33,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function MarketingAboutUsPage() {
   return (
-    <Page title="About Us - Marketing">
+    <Page title="About Us - Energace Therapeutical Learning Consults">
       <RootStyle>
         <MarketingAbout />
 
@@ -45,15 +43,9 @@ export default function MarketingAboutUsPage() {
 
         <MarketingAboutStory />
 
-        <TeamMarketingAbout members={_members} />
-
         <TestimonialsMarketing testimonials={_testimonials} />
 
         <OurClientsMarketingAbout brands={_brandsColor} />
-
-        <MarketingFaqs />
-
-        <MarketingFreeSEO />
 
         <NewsletterMarketing />
       </RootStyle>

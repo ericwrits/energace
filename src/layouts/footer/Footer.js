@@ -48,8 +48,7 @@ export default function Footer() {
               <Stack alignItems="flex-start" spacing={3}>
                 <Logo />
                 <Typography variant="body3" sx={{ color: 'text.secondary' }}>
-                  The starting point for your next project based on easy-to-customize Material-UI ©
-                  helps you build apps faster and better.
+                  Welcome to Energace Therapeutical Learning Consults.
                 </Typography>
               </Stack>
 
@@ -58,18 +57,11 @@ export default function Footer() {
                 <SocialsButton />
               </Stack>
 
-              <Stack alignItems="flex-start">
-                <Typography variant="h6">Documentation</Typography>
-                <NextLinkItem href="#">Documentation</NextLinkItem>
-                <NextLinkItem href="#">Changelog</NextLinkItem>
-                <NextLinkItem href="#">Contributing</NextLinkItem>
-              </Stack>
-
               <Stack spacing={2}>
                 <Stack spacing={1}>
                   <Typography variant="h6">Let’s stay in touch</Typography>
                   <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                    Ubscribe to our newsletter to receive latest articles to your inbox weekly.
+                    Subscribe to our newsletter to receive latest articles to your inbox weekly.
                   </Typography>
                 </Stack>
                 <FilledInput
@@ -86,11 +78,6 @@ export default function Footer() {
                     '& .MuiFilledInput-input': { py: '14px' },
                   }}
                 />
-              </Stack>
-
-              <Stack spacing={2}>
-                <Typography variant="h6">Apps</Typography>
-                <AppStoreButton />
               </Stack>
             </Stack>
           </Grid>

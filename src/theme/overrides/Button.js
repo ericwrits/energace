@@ -25,7 +25,7 @@ export default function Button(theme) {
         outlinedInherit: {
           borderColor: alpha(theme.palette.grey[500], 0.32),
           '&:hover': {
-            backgroundColor: theme.palette.action.hover,
+            backgroundColor: theme.palette.action.hover, 
             borderColor: theme.palette.text.primary,
           },
         },

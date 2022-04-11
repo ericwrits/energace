@@ -47,8 +47,7 @@ export default function MarketingAboutOurVision() {
             variant="h4"
             sx={{ mt: 5, maxWidth: 564, bottom: { md: 80 }, opacity: { md: 0.72 } }}
           >
-            Our vision offering the best product nulla vehicula tortor scelerisque ultrices
-            malesuada.
+            Our vision offering the best services to every of our client.
           </TypographyStyle>
         </Container>
       </RootStyle>
