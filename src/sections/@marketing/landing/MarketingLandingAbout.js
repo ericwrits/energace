@@ -31,8 +31,7 @@ export default function MarketingLandingAbout() {
         
 
         <Grid
-          container
-          rowSpacing={{ xs: 5, md: 0 }}
+          rowSpacing={{ xs: 0, md: 0 }}
           columnSpacing={{ md: 3 }}
           justifyContent="space-between"
         >
