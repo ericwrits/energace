@@ -18,6 +18,7 @@ import {
   courseTitle,
   description,
   jobCategories,
+  marketingLandingHeroItems,
 } from './text';
 
 // ----------------------------------------------------------------------
@@ -45,6 +46,7 @@ const _mock = {
     jobTitle: (index) => jobTitle[index],
     jobCategories: (index) => jobCategories[index],
     tourName: (index) => tourName[index],
+    marketingLandingHeroItems: (index) => marketingLandingHeroItems[index],
     brandsName: (index) => brandsName[index],
     sentence: (index) => sentence[index],
     description: (index) => description[index],

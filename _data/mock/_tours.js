@@ -27,7 +27,7 @@ export const _tours = [...Array(12)].map((_, index) => ({
   id: _mock.id(index),
   coverImg: _mock.image.travel(index),
   heroImg: _mock.image.travelLarge(index),
-  slug: _mock.text.tourName(index),
+  slug: _mock.text.marketingLandingHeroItems(index),
   createdAt: _mock.time(index),
   availableStart: add(new Date(), { days: 2 }),
   availableEnd: add(new Date(), { months: 4 }),

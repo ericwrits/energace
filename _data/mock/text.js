@@ -261,3 +261,22 @@ export const description = [
 ];
 
 // ----------------------------------------------------------------------
+
+export const marketingLandingHeroItems = [
+  'Have you recently been in a traumatic situation',
+  'Speak To A Psychologist',
+  'Are you suicidal?',
+  'Do you suffer from low self-esteem?',
+  'Do you feel depressed?',
+  'Do you have addictions or habits you find hard to break?',
+  'Are you struggling to cope at work?',
+  'Do you find it hard to read words?',
+  'Is your child showing symptoms of autism, attention deficiency or hyperactivity?',
+  'Do your children have issues reading and writing or with comprehension',
+  'Essential Turkey Small Group',
+  'Istanbul to Cappadocia',
+  '6 Nights in Greece',
+  'Death Valley Day Tour from Las Vegas- Small Groups Tour',
+  'National Parks Winter Tour',
+  'National Parks Tour 3 Days Small Group Tour from Las Vegas',
+];
