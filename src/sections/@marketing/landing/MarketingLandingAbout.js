@@ -27,9 +27,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 export default function MarketingLandingAbout() {
   return (
     <RootStyle>
-      <Container>
-        
-
+      <Container>     
         <Grid
           rowSpacing={{ xs: 0, md: 0 }}
           columnSpacing={{ md: 3 }}
