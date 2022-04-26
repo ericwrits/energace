@@ -50,7 +50,7 @@ export default function MarketingLandingAbout() {
             </Typography>
             <NextLink href={Routes.marketing.about} prefetch={false}>
               <Button size="large" endIcon={<Iconify icon={directionStraightRight} />} sx={{ mt: 5 }}>
-                Lean more
+                Learn more
               </Button>
             </NextLink>
             

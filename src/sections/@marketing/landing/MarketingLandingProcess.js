@@ -56,12 +56,9 @@ export default function MarketingLandingProcess() {
           </Typography>
 
           <Typography variant="h2" sx={{ mt: 2, mb: 3 }}>
-            Working Process
+          How our Therapy Solution works.
           </Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
-           How our Therapy Solution works.
-          </Typography>
         </Stack>
 
         <Box

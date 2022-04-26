@@ -16,7 +16,7 @@ import { IconButtonAnimate } from '../../../components/animate';
 
 const COLORS = ['primary', 'secondary', 'success', 'warning'];
 
-const SERVICES = [
+const SERVICES = [ 
   {
     name: 'Psychoeducational Assessment',
     icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_seo.svg',
@@ -70,12 +70,9 @@ export default function MarketingLandingServices() {
           </Typography>
 
           <Typography variant="h2" sx={{ mt: 2, mb: 3 }}>
-            We Provide
+            How we get to know what's up
           </Typography>
-
-          <Typography sx={{ color: 'text.secondary' }}>
-            How we get to know what's up 
-          </Typography>
+          
         </Stack>
 
         <Box
