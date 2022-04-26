@@ -22,6 +22,7 @@ import { NewsletterMarketing } from '../../src/sections/newsletter';
 import { TestimonialsMarketing } from '../../src/sections/testimonials';
 
 import {
+  MarketingLandingHero,
   MarketingLandingAbout,
   MarketingLandingProcess,
   MarketingLandingServices,
@@ -50,10 +51,8 @@ export default function MarketingLandingPage({ posts, caseStudies }) {
   return (
     <Page title="Energace Therapeutic Learning Consults">
     <Box sx={{ position: 'relative' }}>
-    <TravelLandingHero tours={tours.slice(0, 5)} />
-
-    
-  </Box>
+        <MarketingLandingHero tours={tours.slice(0, 5)} />
+      </Box>
 
       <MarketingLandingAbout />
 
