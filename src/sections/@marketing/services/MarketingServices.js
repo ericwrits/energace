@@ -10,16 +10,40 @@ import Routes from '../../../routes';
 // components
 import { Iconify, Image } from '../../../components';
 
+import PropTypes from 'prop-types';
+
+import { SvgIconStyle } from '../../../components';
+
+
 // ----------------------------------------------------------------------
 
-const LISTS = [
-  'First Class Flights',
-  '5 Star Accommodations',
-  'Inclusive Packages',
-  'Latest Model Vehicles',
+const CORE_VALUES  = [ 
+  {
+    title: 'Psychoeducational Assessment',
+    icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_seo.svg',
+    description: "This is Energace’s comprehensive diagnostic standardized assessment of a child’s cognitive and academic abilities. It is administered by a psychologist and combines clinical interview, observation and historical records to help understand how a child learns, and identify if and how they struggle. During this assessment we also evaluate other concerns such as attention-deficit/hyperactivity disorder or anxiety and recommendations for your child are based on a combination of standardized test results and the evaluation of psychosocial and mental health issues.",
+  },
+  {
+    title: 'Cognitive assessment',
+    icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_mail.svg',
+    description: 'Our cognitive assessment focuses on measuring and ascertaining general learning ability, cognitive function and current cognitive development in key areas for individuals. This helps us appraise the weaker or stronger cognitive skills (this is how the brain takes in, process and give out information) and how best to develop and nurture those skills. This assessment has no diagnostic result.',
+  },
+  {
+    title: 'Reading Assessment',
+    icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_analysis.svg',
+    description: "This assessment is focused on evaluating a child or a person’s reading, spelling and writing capacity; and reading age. We also include a Cognitive rating scale that aids in evaluating an individual’s cognitive development. This assessment helps us draw our conclusions on how best to proceed with our reading and literacy therapy",
+  },
+  {
+    title: 'CBT Assessment',
+    icon: 'https://zone-assets-api.vercel.app/assets/icons/service/ic_service_bullhorn.svg',
+    description: 'Cognitive Behavioural Therapy assessment is a form of clinical interview and clinical observation that enables the therapist and the client break down the client’s issues to establish an understanding of the reason and the underlying fuel of the client’s individual issues or thought process. This therefore aims at making therapy a likely success by creating a treatment plan',
+  },
 ];
 
+
+
 const RootStyle = styled('div')(({ theme }) => ({
+  textAlign: 'center',
   padding: theme.spacing(8, 0),
   [theme.breakpoints.up('md')]: {
     padding: theme.spacing(15, 0),
@@ -32,53 +56,33 @@ export default function MarketingServices() {
   return (
     <RootStyle>
       <Container>
-        <Grid container spacing={3} justifyContent="space-between" alignItems="center">
-          <Grid item xs={12} md={6} lg={5}>
-            <Image
-              alt="services"
-              src="https://zone-assets-api.vercel.app/assets/illustrations/illustration_services.svg"
-            />
-          </Grid>
 
-          <Grid item xs={12} md={6} lg={6}>
-            <Stack spacing={3} sx={{ mb: 5 }}>
-              <Typography variant="h2">Offline SEO</Typography>
-              <Typography sx={{ color: 'text.secondary' }}>
-                Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non,
-                turpis. Nunc nonummy metus. Donec elit libero, sodales nec
+        <Box
+          sx={{
+            display: 'grid',
+            rowGap: { xs: 8, md: 10 },
+            columnGap: 10,
+            gridTemplateColumns: {
+              xs: 'repeat(1, 1fr)',
+              sm: 'repeat(2, 1fr)',
+              md: 'repeat(3, 1fr)',
+            },
+          }}
+        >
+          {CORE_VALUES.map((value) => (
+            <div key={value.title}>
+              <SvgIconStyle
+                src={value.icon}
+                color="info"
+                sx={{ width: 64, height: 64, mx: 'auto', bgcolor: 'primary.main' }}
+              />
+              <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
+                {value.title}
               </Typography>
-
-              <Stack spacing={1}>
-                {LISTS.map((text) => (
-                  <Stack key={text} direction="row" alignItems="center">
-                    <Box
-                      component="span"
-                      sx={{
-                        mr: 2,
-                        width: 6,
-                        height: 6,
-                        borderRadius: '50%',
-                        bgcolor: 'primary.main',
-                      }}
-                    />
-                    {text}
-                  </Stack>
-                ))}
-              </Stack>
-            </Stack>
-
-            <NextLink href={Routes.marketing.caseStudies}>
-              <Button
-                size="large"
-                color="inherit"
-                variant="outlined"
-                endIcon={<Iconify icon={directionStraightRight} sx={{ width: 22, height: 22 }} />}
-              >
-                Check Our Work
-              </Button>
-            </NextLink>
-          </Grid>
-        </Grid>
+              <Typography sx={{ color: 'text.secondary' }}> {value.description} </Typography>
+            </div>
+          ))}
+        </Box>
       </Container>
     </RootStyle>
   );

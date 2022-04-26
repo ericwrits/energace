@@ -77,7 +77,8 @@ export default function MarketingServicesHero() {
     <RootStyle>
       <Container sx={{ position: 'relative', zIndex: 9 }}>
         <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={8} 
+          alignItems="center">
             <Stack
               spacing={3}
               sx={{
@@ -88,14 +89,24 @@ export default function MarketingServicesHero() {
                 color: 'common.white',
               }}
             >
-              <Typography variant="h1">Offline SEO</Typography>
+              <Typography variant="h1">How we get to know what's up </Typography>
               <Typography sx={{ opacity: 0.72 }}>
-                Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-                venenatis ante odio sit amet eros.
+                Do you want to get diagnosed quickly?
+              </Typography>
+              <Typography sx={{ opacity: 0.72 }}>
+                Speak to a Psycologist now
               </Typography>
             </Stack>
 
-            <ServicesForm />
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                ml: 12,
+                justifyContent: 'center',
+              }}>
+              Book an Appointment Now
+            </Button>
           </Grid>
         </Grid>
       </Container>
@@ -104,7 +115,7 @@ export default function MarketingServicesHero() {
 
       <Image
         alt="hero"
-        src="https://zone-assets-api.vercel.app/assets/images/marketing/marketing_services_hero.jpg"
+        src="https://energace.net/images/hero_8.jpg"
         sx={{ position: 'absolute', top: 0, left: 0, width: 1, height: 1 }}
       />
     </RootStyle>
