@@ -22,6 +22,8 @@ import {
   MarketingServicesInclude,
   MarketingServicesHowItWork,
   MarketingServicesBenefits,
+  ServicesChildrenLiteracySkillBuilding,
+  ServicesWorkPerformanceImprovement
 } from '../../src/sections/@marketing';
 
 // ----------------------------------------------------------------------
@@ -75,6 +77,10 @@ export default function MarketingServicesPage({ posts }) {
         <MarketingServicesInclude />
 
         <MarketingServicesHowItWork />
+
+        <ServicesWorkPerformanceImprovement />
+
+        <ServicesChildrenLiteracySkillBuilding />
 
         <MarketingServicesBenefits />
 

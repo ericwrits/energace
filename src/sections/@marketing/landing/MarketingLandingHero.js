@@ -232,7 +232,7 @@ return (
   >
     <Avatar src={heroImg} sx={{ width: 48, height: 48 }} />
     <Stack spacing={0.5}>
-      <TextMaxLine variant="h6" line={1}>
+      {/*<TextMaxLine variant="h6" line={1}>
         {location}
       </TextMaxLine>
       <TextIconLabel
@@ -247,7 +247,7 @@ return (
             {continent}
           </TextMaxLine>
         }
-      />
+      />*/}
     </Stack>
   </Stack>
 );
