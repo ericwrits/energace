@@ -130,13 +130,13 @@ tour: PropTypes.shape({
   location: PropTypes.string,
   price: PropTypes.number,
   ratings: PropTypes.number,
-  slug: PropTypes.string,
+  heroItem: PropTypes.string,
 }),
 };
 
 function ContentItem({ tour }) {
 const theme = useTheme();
-const { slug, location, heroImg, ratings, price, duration } = tour;
+const { heroItem, location, heroImg, ratings, price, duration } = tour;
 
 return (
   <Box
@@ -159,7 +159,7 @@ return (
       }}
     >
       <Typography variant="h2" sx={{ maxWidth: 480 }}>
-        {slug}
+        {heroItem}
       </Typography>
 
       <Button variant="contained" size="large">
