@@ -42,7 +42,7 @@ MarketingLandingPage.propTypes = {
 
 export default function MarketingLandingPage({ posts, caseStudies }) {
   const { data: tours = [], error } = useRequest({
-    url: `/api/travel/tours`,
+    url: `/api/energaceLanding`,
   });
 
   if (error) {
