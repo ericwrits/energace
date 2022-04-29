@@ -42,7 +42,7 @@ MarketingLandingPage.propTypes = {
 
 export default function MarketingLandingPage({ posts, caseStudies }) {
   const { data: tours = [], error } = useRequest({
-    url: `/api/energaceLanding`,
+    url: `https://energace.herokuapp.com/api/energaceLanding`,
   });
 
   if (error) {
