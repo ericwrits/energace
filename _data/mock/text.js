@@ -267,7 +267,7 @@ export const marketingLandingHeroItems = [
   'Speak To A Psychologist',
   'Are you suicidal?',
   'Do you suffer from low self-esteem?',
-  'Do you feel depressed?',
+  'Do you feel stressed or depressed?',
   'Do you have addictions or habits you find hard to break?',
   'Are you struggling to cope at work?',
   'Do you find it hard to read words?',

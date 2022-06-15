@@ -2,7 +2,7 @@
 title: 'Digital Shose'
 description: 'Praesent vestibulum dapibus nibh. Vestibulum fringilla pede sit amet augue. '
 category: 'Marketing'
-coverImg: 'https://zone-assets-api.vercel.app/assets/images/marketing/marketing_4.jpg'
+coverImg: 'https://energace.net/images/hero_3.jpg'
 heroImg: 'https://zone-assets-api.vercel.app/assets/images/marketing/marketing_hero.jpg'
 createdAt: '2020-03-16T05:35:07.322Z'
 galleryImgs:

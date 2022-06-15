@@ -202,13 +202,14 @@ tour: PropTypes.shape({
   heroImg: PropTypes.string,
   location: PropTypes.string,
   continent: PropTypes.string,
+  heroItems: PropTypes.string,
 }),
 isSelected: PropTypes.bool,
 };
 
 function ThumbnailItem({ tour, isSelected }) {
 const theme = useTheme();
-const { continent, heroImg, location } = tour;
+const { continent, heroImg, location, heroItems } = tour;
 
 return (
   <Stack
@@ -232,10 +233,10 @@ return (
   >
     <Avatar src={heroImg} sx={{ width: 48, height: 48 }} />
     <Stack spacing={0.5}>
-      {/*<TextMaxLine variant="h6" line={1}>
-        {location}
+      <TextMaxLine variant="h6" line={1}>
+        {heroItems}
       </TextMaxLine>
-      <TextIconLabel
+      {/*<TextIconLabel
         icon={
           <Iconify
             icon={locationIcon}

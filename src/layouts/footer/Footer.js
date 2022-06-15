@@ -23,20 +23,16 @@ import {
 // hooks
 import { useResponsive } from '../../hooks';
 // components
-import { Logo, Iconify, SocialsButton, AppStoreButton } from '../../components';
+import { Logo, Iconify, SocialsButton } from '../../components';
 //
 import { PageLinks } from '../nav/NavConfig';
+
+import { MarketingContactInfo } from '../../sections/@marketing';
 
 // ----------------------------------------------------------------------
 
 export default function Footer() {
-  const isDesktop = useResponsive('up', 'md');
 
-  const lists = PageLinks.filter((list) => list.subheader !== 'Coming Soon');
-
-  const renderLists = isDesktop
-    ? lists
-    : lists.sort((listA, listB) => Number(listA.order) - Number(listB.order));
 
   return (
     <>
@@ -83,19 +79,7 @@ export default function Footer() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            {isDesktop ? (
-              <Masonry columns={3} spacing={3}>
-                {renderLists.map((list) => (
-                  <ListDesktop key={list.subheader} list={list} />
-                ))}
-              </Masonry>
-            ) : (
-              <Stack spacing={1.5}>
-                {renderLists.map((list) => (
-                  <ListMobile key={list.subheader} list={list} />
-                ))}
-              </Stack>
-            )}
+          <MarketingContactInfo />
           </Grid>
         </Grid>
       </Container>

@@ -63,7 +63,7 @@ export default function MarketingServicesBenefits() {
             mb: { xs: 8, md: 15 },
           }}
         >
-          <Typography variant="h2">Benefits Achieved</Typography>
+          <Typography variant="h2">How Everybody's brain can be trained</Typography>
           <Typography sx={{ opacity: 0.72 }}>
             Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
           </Typography>

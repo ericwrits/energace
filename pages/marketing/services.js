@@ -82,13 +82,7 @@ export default function MarketingServicesPage({ posts }) {
 
         <ServicesChildrenLiteracySkillBuilding />
 
-        <MarketingServicesBenefits />
-
-        <TestimonialsMarketing testimonials={_testimonials} />
-
         <BlogMarketingLatestPosts posts={posts.slice(0, 4)} />
-
-        <MarketingFreeSEO />
 
         <NewsletterMarketing />
       </RootStyle>

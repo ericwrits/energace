@@ -6,7 +6,7 @@ import createGradient from '../utils/createGradient';
 
 // SETUP COLORS
 
-export const contrastText = {
+export const contrastText = { 
   white: '#FFFFFF',
   black: '#212B36',
 };
@@ -29,10 +29,10 @@ const SECONDARY = {
 };
 const INFO = {
   lighter: '#CBFEFC',
-  light: '#63E8F9',
+  light: '#116E95',
   main: '#00B1ED',
   dark: '#0067AA',
-  darker: '#003471',
+  darker: '#77F0ED',
   contrastText: contrastText.white,
 };
 const SUCCESS = {

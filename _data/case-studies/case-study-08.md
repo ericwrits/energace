@@ -2,7 +2,7 @@
 title: 'Network Firefox'
 description: 'Praesent vestibulum dapibus nibh. Vestibulum fringilla pede sit amet augue. '
 category: 'Development'
-coverImg: 'https://zone-assets-api.vercel.app/assets/images/marketing/marketing_8.jpg'
+coverImg: 'https://energace.net/images/hero_7.jpg'
 heroImg: 'https://zone-assets-api.vercel.app/assets/images/marketing/marketing_hero.jpg'
 createdAt: '2020-03-16T05:35:07.322Z'
 galleryImgs:

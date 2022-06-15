@@ -9,24 +9,24 @@ import { Iconify, SvgIconStyle } from '../../../components';
 
 // ----------------------------------------------------------------------
 
-const COLORS = ['primary', 'secondary', 'warning', 'success'];
+const COLORS = ['primary', 'secondary', 'info', 'error'];
 
 const SERVICES = [
   {
     name: 'CBT Therapy',
-    icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_sketch_design.svg',
+    icon: 'https://cdn-icons-png.flaticon.com/512/1491/1491303.png',
   },
   {
     name: 'Brainware Entertainment Therapy',
-    icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_search.svg',
+    icon: 'https://cdn-icons-png.flaticon.com/512/552/552326.png',
   },
   {
     name: 'Individual Therapy',
-    icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_optimization.svg',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4072/4072901.png',
   },
   {
     name: 'Reading Therapy',
-    icon: 'https://zone-assets-api.vercel.app/assets/icons/ic_analysis.svg',
+    icon: 'https://cdn-icons-png.flaticon.com/512/1491/1491279.png',
   },
 ];
 

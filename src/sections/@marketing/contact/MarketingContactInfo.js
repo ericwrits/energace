@@ -36,7 +36,7 @@ export default function MarketingContactInfo() {
               </Link>
             </Stack>
 
-            <Typography variant="body2">508 Bridle Avenue Newnan, GA 30263e</Typography>
+            <Typography variant="body2">29 Kigoma Street by Bolton White Apartment, Wuse Zone 7, Abuja</Typography>
           </Stack>
         }
       />
@@ -48,7 +48,7 @@ export default function MarketingContactInfo() {
         value={
           <Stack spacing={0.5}>
             <Typography variant="h6">Call us</Typography>
-            <Typography variant="body2">(319) 555-0115</Typography>
+            <Typography variant="body2">+234 90 4006 7560</Typography>
           </Stack>
         }
       />
@@ -60,8 +60,8 @@ export default function MarketingContactInfo() {
         value={
           <Stack spacing={0.5}>
             <Typography variant="h6">Talk to us</Typography>
-            <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-              hello@example.com
+            <Link color="inherit" variant="body2" href="mailto:info@energace.net">
+              info@energace.net
             </Link>
           </Stack>
         }
