@@ -1,13 +1,10 @@
 import PropTypes from 'prop-types';
 // @mui
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 // utils
 import { getAllPosts } from '../../src/utils/get-mardown/marketing/posts';
-import { getAllCaseStudies } from '../../src/utils/get-mardown/marketing/case-studies';
-
-import { TestimonialsTravel } from '../../src/sections/testimonials';
 // _data
-import { _testimonials, _brands, _members, _pricingMarketing } from '../../_data/mock';
+import { _testimonials } from '../../_data/mock';
 // layouts
 import Layout from '../../src/layouts';
 // components
@@ -15,8 +12,6 @@ import { Page, ErrorScreen } from '../../src/components';
 // hooks
 import { useRequest } from '../../src/hooks';
 // sections
-import { PricingMarketing } from '../../src/sections/pricing';
-import { TeamMarketingLangding } from '../../src/sections/team';
 import { BlogMarketingLatestPosts } from '../../src/sections/blog';
 import { NewsletterMarketing } from '../../src/sections/newsletter';
 import { TestimonialsMarketing } from '../../src/sections/testimonials';
@@ -26,21 +21,16 @@ import {
   MarketingLandingAbout,
   MarketingLandingProcess,
   MarketingLandingServices,
-  MarketingLandingCaseStudies,
 } from '../../src/sections/@marketing';
 
-import {
-  TravelLandingHero
-} from '../../src/sections/@travel'
 
 // ----------------------------------------------------------------------
 
 MarketingLandingPage.propTypes = {
-  caseStudies: PropTypes.array,
   posts: PropTypes.array,
 };
 
-export default function MarketingLandingPage({ posts, caseStudies }) {
+export default function MarketingLandingPage({ posts }) {
   const { data: tours = [], error } = useRequest({
     url: `/api/energaceLanding`,
   });
@@ -59,8 +49,6 @@ export default function MarketingLandingPage({ posts, caseStudies }) {
       <MarketingLandingServices />
 
       <MarketingLandingProcess />
-
-      {/*<MarketingLandingCaseStudies caseStudies={caseStudies.slice(-6)} />*/}
       
       <TestimonialsMarketing testimonials={_testimonials} />
 
@@ -83,7 +71,6 @@ export async function getStaticProps() {
   return {
     props: {
       posts: getAllPosts(),
-      caseStudies: getAllCaseStudies(),
     },
   };
 }
