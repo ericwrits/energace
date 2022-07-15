@@ -44,7 +44,7 @@ export default function MarketingLandingAbout() {
 
             <Typography sx={{ color: 'text.secondary' }}>
               Energace Therapeutic Learning Consults is a psychological practice
-              focused on using its therapeutic initiatives tomake credible
+              focused on using its therapeutic initiatives to make credible
               psychological and educational assessments. Our methods are well developed to enhance learning,
               improve cognitive skills, literacy skills and improve emotional state.
             </Typography>

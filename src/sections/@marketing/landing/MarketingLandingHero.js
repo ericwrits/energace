@@ -163,7 +163,7 @@ return (
       </Typography>
 
       <Button variant="contained" size="large">
-        Book an Appointment Now
+        Speak to a psychologist
       </Button>
     </Stack>
 

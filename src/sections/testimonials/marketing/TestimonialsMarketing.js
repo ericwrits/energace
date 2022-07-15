@@ -57,7 +57,7 @@ export default function TestimonialsMarketing({ testimonials }) {
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
             Testimonials
           </Typography>
-          <Typography variant="h2">Who Love Our Work</Typography>
+          <Typography variant="h2">Testimonials</Typography>
         </Stack>
 
         <CarouselArrows onNext={handleNext} onPrevious={handlePrevious}>
@@ -111,9 +111,6 @@ function TestimonialsItem({ testimonial }) {
         <Avatar alt={name} src={avatar} sx={{ width: 96, height: 96, mx: 'auto' }} />
         <Typography variant="h6" sx={{ mt: 2.5, mb: 0.5 }}>
           {name}
-        </Typography>
-        <Typography variant="body3" sx={{ color: 'text.secondary' }}>
-          {role}
         </Typography>
       </Stack>
     </Stack>

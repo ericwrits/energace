@@ -74,7 +74,7 @@ export default function MarketingContactInfo() {
         value={
           <Stack spacing={0.5}>
             <Typography variant="h6">Working Hours</Typography>
-            <Typography variant="body2">Mon-Fri: 9 am — 6 pm</Typography>
+            <Typography variant="body2">Mon-Fri: 9 am — 5 pm</Typography>
           </Stack>
         }
       />

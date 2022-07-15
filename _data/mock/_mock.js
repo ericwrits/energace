@@ -20,6 +20,7 @@ import {
   jobCategories,
   marketingLandingHeroItems,
 } from './text';
+import { testimonies } from './testimonies';
 
 // ----------------------------------------------------------------------
 
@@ -85,6 +86,7 @@ const _mock = {
     linkedin: `linkedin/user-name`,
     twitter: `twitter/user-name`,
   },
+  testimonies: (index) => testimonies[index],
 };
 
 export default _mock;
