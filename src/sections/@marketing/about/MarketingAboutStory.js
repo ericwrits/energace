@@ -70,9 +70,6 @@ export default function MarketingAboutStory() {
         >
           <Typography variant="h2">About Us</Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
-            
-          </Typography>
         </Stack>
 
         <Timeline position={isDesktop ? 'alternate' : 'right'}>

@@ -60,7 +60,7 @@ const _mock = {
   },
   image: {
     avatar: (index) =>
-      `https://zone-assets-api.vercel.app/assets/images/avatars/avatar_${index + 1}.jpg`,
+      `https://cdn-icons-png.flaticon.com/512/747/747376${index + 1}.png`,
     company: (index) =>
       `https://zone-assets-api.vercel.app/assets/images/companies/company_${index + 1}.png`,
     marketing: (index) =>
