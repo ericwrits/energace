@@ -1,6 +1,6 @@
 // @mui
 import { styled } from '@mui/material/styles';
-import { Typography, Container, Box } from '@mui/material';
+import { Typography, Container, Box, Grid } from '@mui/material';
 // components
 import { SvgIconStyle } from '../../../components';
 
@@ -43,39 +43,32 @@ export default function MarketingAboutCoreValues() {
   return (
     <RootStyle>
       <Container>
-        <Typography
-          variant="h2"
-          sx={{
-            mb: { xs: 8, md: 10 },
-          }}
-        >
-          Our Core Values
+      <Grid
+      rowSpacing={{ xs: 0, md: 0 }}
+      columnSpacing={{ md: 3 }}
+      justifyContent="space-between"
+    >
+      <Grid item xs={12} md={12} sx={{ textAlign: { xs: 'center', md: '' } }}>
+        <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+          About Us
         </Typography>
 
-        <Box
-          sx={{
-            display: 'grid',
-            gap: 8,
-            gridTemplateColumns: {
-              xs: 'repeat(1, 1fr)',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(4, 1fr)',
-            },
-          }}
-        >
-          {CORE_VALUES.map((value) => (
-            <div key={value.title}>
-              <SvgIconStyle
-                src={value.icon}
-                sx={{ width: 64, height: 64, mx: 'auto', color: 'primary.main' }}
-              />
-              <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
-                {value.title}
-              </Typography>
-              <Typography sx={{ color: 'text.secondary' }}> {value.description} </Typography>
-            </div>
-          ))}
-        </Box>
+        <Typography variant="h2" sx={{ mt: 2, mb: 3 }}>
+          Our Mission
+        </Typography>
+
+        <Typography sx={{ color: 'text.secondary' }}>
+        To build a psychology practice dedicated to making available effective and innovative mental health 
+        solutions in individual lives, schools and workplace. 
+        Our goal is singular in providing services to enhance emotional well being for individuals.
+        We aim to boost the cognitive and learning capacity of the average African child to be at par with or 
+        exceed global standards. We also seek to advance the cognitive abilities and optimize the mental well 
+        being of the average African professionals; equipping people with the abilities to navigate their own 
+        minds, emotions and brain mechanism skillfully.
+        </Typography>
+        
+      </Grid>
+    </Grid>
       </Container>
     </RootStyle>
   );

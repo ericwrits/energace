@@ -264,7 +264,7 @@ export const description = [
 
 export const marketingLandingHeroItems = [
   'Have you recently been in a traumatic situation',
-  'Speak To A Psychologist',
+  'Book an appointment now',
   'Are you suicidal?',
   'Do you suffer from low self-esteem?',
   'Do you feel stressed or depressed?',

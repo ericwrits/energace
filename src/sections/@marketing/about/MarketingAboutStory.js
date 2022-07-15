@@ -16,28 +16,28 @@ import useResponsive from '../../../hooks/useResponsive';
 
 const CORE_VALUES = [
   {
-    year: '2021',
-    title: 'Customer Satisfaction',
+    year: 'Energace',
+    title: 'Our Contract',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'We promise confidentiality and commitment to our clients and encourage them to do the same to ensure a relatively permanent change in behavioural, emotional, social and cognitive well being.',
   },
   {
-    year: '2020',
-    title: 'Transparency',
+    year: 'Energace',
+    title: 'Our Results',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Our services helps our clients be prepared to take on the reality we are bound to face daily. ',
   },
   {
-    year: '2019',
-    title: 'Reputation',
+    year: 'Energace',
+    title: 'Our Vision',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Our vision is to provide state of art mental health solutions and a web of psychological interventions all over Africa and the world at large.',
   },
   {
-    year: '2018',
-    title: 'Cooperation',
+    year: 'Energace',
+    title: 'Our Slogan',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'We Provide Innovative Effective Mental Health Solutions.',
   },
 ];
 
@@ -68,10 +68,10 @@ export default function MarketingAboutStory() {
             mb: { xs: 8, md: 15 },
           }}
         >
-          <Typography variant="h2">Our Story</Typography>
+          <Typography variant="h2">About Us</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+            
           </Typography>
         </Stack>
 
