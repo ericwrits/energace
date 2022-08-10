@@ -1,58 +1,88 @@
+import PropTypes from 'prop-types';
+// icons
+import trophyIcon from '@iconify/icons-carbon/trophy';
+import dataVis4 from '@iconify/icons-carbon/data-vis-4';
+import increaseLevel from '@iconify/icons-carbon/increase-level';
+import userCertification from '@iconify/icons-carbon/user-certification';
+import directionStraightRight from '@iconify/icons-carbon/direction-straight-right';
 // @mui
-import { styled } from '@mui/material/styles';
-import {
-  Timeline,
-  TimelineDot,
-  TimelineItem,
-  TimelineContent,
-  TimelineSeparator,
-  TimelineConnector,
-} from '@mui/lab';
-import { Stack, Typography, Container } from '@mui/material';
-
-// next
-import NextLink from 'next/link';
+import { styled, alpha } from '@mui/material/styles';
+import { Grid, Box, Container, Typography, Button } from '@mui/material';
 // utils
-import cssStyles from '../../../utils/cssStyles';
-// hooks
-import useResponsive from '../../../hooks/useResponsive';
-
-import Routes from '../../../routes';
+import { fShortenNumber } from '../../../utils/formatNumber';
+// components
+import { Iconify, CountUpNumber, Image } from '../../../components';
 
 // ----------------------------------------------------------------------
 
-const COLORS = ['primary', 'secondary', 'warning', 'success', 'info', 'error', 'primary'];
+const SUMMARY = [
+  { title: 'Years of experience', total: 12, icon: increaseLevel },
+  { title: 'Awards', total: 20, icon: trophyIcon },
+  { title: 'Projects', total: 150, icon: dataVis4 },
+  { title: 'Happy clients', total: 32000, icon: userCertification },
+];
+
+const COLORS = ['primary', 'secondary', 'warning', 'success'];
 
 const RootStyle = styled('div')(({ theme }) => ({
-  ...cssStyles().bgImage(),
   padding: theme.spacing(10, 0),
-  color: theme.palette.common.white,
   [theme.breakpoints.up('md')]: {
     padding: theme.spacing(15, 0),
   },
 }));
 
+const IconStyle = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'color',
+})(({ color, theme }) => ({
+  width: 160,
+  height: 160,
+  margin: 'auto',
+  display: 'flex',
+  borderRadius: '50%',
+  alignItems: 'center',
+  position: 'relative',
+  justifyContent: 'center',
+  color: theme.palette[color].darker,
+  border: `dashed 2px ${alpha(theme.palette[color].main, 0.24)}`,
+  '&:before': {
+    zIndex: 8,
+    content: '""',
+    borderRadius: '50%',
+    position: 'absolute',
+    width: 'calc(100% - 48px)',
+    height: 'calc(100% - 48px)',
+    background: `conic-gradient(from 0deg at 50% 50%, ${theme.palette[color].main} 0deg, ${theme.palette[color].light} 360deg)`,
+  },
+  '& svg': {
+    zIndex: 9,
+  },
+}));
+
 // ----------------------------------------------------------------------
 
-export default function MarketingServicesHowItWork() {
-  const isDesktop = useResponsive('up', 'md');
-
+export default function MarketingCognitive() {
   return (
     <RootStyle>
       <Container>
-        <Stack
-          spacing={3}
-          sx={{
-            maxWidth: 480,
-            textAlign: 'center',
-            mx: 'auto',
-            mb: { xs: 8, md: 15 },
-          }}
-        >
-          <Typography variant="h2">How Everyone’s brain can be trained</Typography>
-        </Stack>
+        <Grid container spacing={3} justifyContent="space-between" alignItems="center">
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg={5}
+            sx={{
+              display: { xs: 'none', md: 'block' },
+            }}
+          >
+            <Image
+              alt="teams"
+              src="https://energace.net/images/ETLC.gif"
+            />
+          </Grid>
 
-        <Typography sx={{color: 'text.secondary'}}>Cognitive Training Program:</Typography>
+          <Grid item xs={12} md={6} lg={6} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+            <Typography variant="h2">How Everyone’s brain can be trained</Typography>
+            <Typography sx={{color: 'text.secondary'}}>Cognitive Training Program:</Typography>
         <Typography > is an online-based software program designed with research input of over 4 decades to train and develop the human brain. That is, just as the human body requires physical training to build stamina, flexibility and coordination of physical activities: cognitive training aims at developing and strengthening stamina, strength, flexibility and coordination of the brain’s capacity for mental activity. 
           Research shows that our cognitive skills accounts for 40% to 50% of the foundation of learning; hence, an intentional attempt should be made knowing that learning or cognitive capacities aren’t fixed and can be developed as a result of the neuroplasticity of the brain. This program can be used online via our platform for individuals between the ages 6 to 106 years at home, school or work.
         
@@ -70,10 +100,46 @@ export default function MarketingServicesHowItWork() {
 
         
         </Typography>
-        <NextLink href={Routes.marketing.services}>
-          <Typography sx={{ color: 'text.secondary' }}> Read More</Typography>
-        </NextLink>
+          </Grid>
+        </Grid>
+
+        <Box
+          sx={{
+            my: { xs: 8, md: 15 },
+          }}
+        />
+
+        
       </Container>
     </RootStyle>
+  );
+}
+
+// ----------------------------------------------------------------------
+
+BoxItem.propTypes = {
+  index: PropTypes.number,
+  value: PropTypes.shape({
+    icon: PropTypes.any,
+    title: PropTypes.string,
+    total: PropTypes.number,
+  }),
+};
+
+function BoxItem({ value, index }) {
+  return (
+    <div>
+      <IconStyle color={COLORS[index]}>
+        <Iconify icon={value.icon} sx={{ width: 48, height: 48 }} />
+      </IconStyle>
+      <Typography variant="h2" sx={{ mt: 2, mb: 1 }}>
+        <CountUpNumber
+          start={value.total / 5}
+          end={value.total}
+          formattingFn={(value) => fShortenNumber(value)}
+        />
+      </Typography>
+      <Typography sx={{ color: 'text.secondary' }}>{value.title}</Typography>
+    </div>
   );
 }

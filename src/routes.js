@@ -11,6 +11,7 @@ const Routes = {
     post: (slug) => `/marketing/blog/${slug}`,
     about: '/marketing/about-us',
     contact: '/marketing/contact-us',
+    cognitive: '/marketing/cognitive',
   },
   // Travel
   travel: {

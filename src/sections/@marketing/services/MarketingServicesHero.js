@@ -94,7 +94,7 @@ export default function MarketingServicesHero() {
                 Do you want to get diagnosed quickly?
               </Typography>
               <Typography sx={{ opacity: 0.72 }}>
-                Speak to a Psycologist now
+                Speak to a Psychologist now
               </Typography>
             </Stack>
 
