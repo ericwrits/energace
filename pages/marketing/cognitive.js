@@ -9,7 +9,7 @@ import Layout from '../../src/layouts';
 // components
 import { Page } from '../../src/components';
 // sections
-import { TeamMarketingAbout } from '../../src/sections/team';
+//import { TeamMarketingAbout } from '../../src/sections/team';
 import { NewsletterMarketing } from '../../src/sections/newsletter';
 import { OurClientsMarketingAbout } from '../../src/sections/our-clients';
 import { TestimonialsMarketing } from '../../src/sections/testimonials';
