@@ -5,7 +5,7 @@ const nextConfig = {
   trailingSlash: true,
   env: {
     DEV_API: 'http://localhost:7777',
-    PRODUCTION_API: 'https://transcendent-kataifi-f045cc.netlify.app/',
+    PRODUCTION_API: 'https://energace.net',
     GOOGLE_API: '',
   },
   images: {
