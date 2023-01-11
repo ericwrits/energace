@@ -27,8 +27,7 @@ import {
   ElearningLandingFeaturedCourses,
 } from '../../src/sections/@e-learning';
 
-import { HOST_API } from '../config';
-
+import { HOST_API } from '../../src/config';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({

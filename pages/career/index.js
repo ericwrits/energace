@@ -31,7 +31,7 @@ import {
   CareerLangdingForRecruiters,
 } from '../../src/sections/@career';
 
-import { HOST_API } from '../config';
+import { HOST_API } from '../../src/config';
 
 // ----------------------------------------------------------------------
 

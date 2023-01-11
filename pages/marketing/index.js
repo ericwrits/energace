@@ -23,7 +23,7 @@ import {
   MarketingLandingServices,
 } from '../../src/sections/@marketing';
 
-import { HOST_API } from '../config';
+import { HOST_API } from '../../src/config';
 
 
 // ----------------------------------------------------------------------
