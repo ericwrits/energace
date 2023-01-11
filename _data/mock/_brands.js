@@ -20,11 +20,11 @@ const BRANDS_NAME = [
 export const _brands = BRANDS_NAME.map((brand, index) => ({
   id: _mock.id(index),
   name: brand,
-  image: `https://energace.net/images/${brand}.png`,
+  image: `https://zhavialayout.net/images/${brand}.png`,
 }));
 
 export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
   id: _mock.id(index),
   name: brand,
-  image: `https://energace.net/images/${brand}.png`,
+  image: `https://zhavialayout.net/images/${brand}.png`,
 }));
