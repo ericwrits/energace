@@ -23,6 +23,8 @@ import {
   MarketingLandingServices,
 } from '../../src/sections/@marketing';
 
+import { HOST_API } from '../config';
+
 
 // ----------------------------------------------------------------------
 
@@ -32,7 +34,7 @@ MarketingLandingPage.propTypes = {
 
 export default function MarketingLandingPage({ posts }) {
   const { data: tours = [], error } = useRequest({
-    url: `/api/energaceLanding`,
+    url: `${HOST_API.production}/api/energaceLanding`,
   });
 
   if (error) {

@@ -31,6 +31,8 @@ import {
   CareerLangdingForRecruiters,
 } from '../../src/sections/@career';
 
+import { HOST_API } from '../config';
+
 // ----------------------------------------------------------------------
 
 CareerLandingPage.propTypes = {
@@ -39,7 +41,7 @@ CareerLandingPage.propTypes = {
 
 export default function CareerLandingPage({ posts }) {
   const { data: jobs = [], error } = useRequest({
-    url: `/api/career/jobs`,
+    url: `${HOST_API.production}/api/career/jobs`,
   });
 
   if (error) {
