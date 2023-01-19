@@ -13,8 +13,6 @@ import { Page, ErrorScreen } from '../../../src/components';
 import { NewsletterTravel } from '../../../src/sections/newsletter';
 import { TravelTourList, TravelTourBarFilters } from '../../../src/sections/@travel';
 
-
-import { HOST_API } from '../../../src/config';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
@@ -28,7 +26,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function TravelToursPage() {
   const { data: tours = [], error } = useRequest({
-    url: `${HOST_API.production}/api/travel/tours`,
+    url: `/api/travel/tours`,
   });
 
   if (error) {

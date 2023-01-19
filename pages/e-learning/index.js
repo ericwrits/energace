@@ -27,7 +27,6 @@ import {
   ElearningLandingFeaturedCourses,
 } from '../../src/sections/@e-learning';
 
-import { HOST_API } from '../../src/config';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
@@ -45,7 +44,7 @@ ElearningLandingPage.propTypes = {
 
 export default function ElearningLandingPage({ posts }) {
   const { data: courses = [], error } = useRequest({
-    url: `${HOST_API.production}/api/e-learning/courses`,
+    url: `/api/e-learning/courses`,
   });
 
   if (error) {
