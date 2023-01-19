@@ -4,7 +4,8 @@
   "version": "1.2",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "8.x"
   },
   "scripts": {
     "lint": "next lint",
