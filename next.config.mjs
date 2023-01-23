@@ -5,7 +5,7 @@ const nextConfig = {
   trailingSlash: true,
   env: {
     DEV_API: 'http://localhost:7777',
-    PRODUCTION_API: 'https://energace.net',
+    PRODUCTION_API: 'https://github.com/ericwrits/energace.git',
     GOOGLE_API: '',
   },
   images: {
